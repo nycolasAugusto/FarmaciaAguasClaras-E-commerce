@@ -32,19 +32,22 @@ if (window.location.pathname.includes("carrinho.html")) {
 }
 
 function atualizarIconeCarrinho() {
-    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-    const countEl = document.querySelector(".cart-count");
-    const totalEl = document.querySelector(".cart-total");
+  const countEl = document.querySelector(".cart-count");
+  const totalEl = document.querySelector(".cart-total");
 
-    let total = carrinho.reduce((acc, item) => acc + item.preco, 0);
+  let total = carrinho.reduce((acc, item) => acc + item.preco, 0);
 
-    if (countEl) countEl.textContent = carrinho.length;
-    if (totalEl) totalEl.textContent = `R$ ${total.toFixed(2)}`;
+  if (countEl) countEl.textContent = carrinho.length;
+  if (totalEl) totalEl.textContent = `R$ ${total.toFixed(2)}`;
 }
 
 atualizarIconeCarrinho();
-
+function zerarCarrinho() {
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  localStorage.removeItem("carrinho");
+}
 
 function removerItem(index) {
   const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
@@ -72,4 +75,5 @@ function finalizarCompra() {
   mensagem += `\nTotal: R$ ${total.toFixed(2)}`;
   const url = `https://wa.me/554197485449?text=${encodeURIComponent(mensagem)}`;
   window.open(url, "_blank");
+  zerarCarrinho();
 }
