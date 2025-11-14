@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho | Farmácia Águas Claras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- TOPO / NAV -->
+  <header class="topbar">
+    <div class="logo-area">
+      <img src="./imgs/logo.jpeg" alt="Logo" />
+      <span>Farmácia Águas Claras</span>
+    </div>
+
+    <div class="search-area">
+      <input type="text" placeholder="Pesquisar..." />
+      <button>Buscar</button>
+    </div>
+
+    <div class="icons-area">
+      <a href="index.html" title="Início">🏠</a>
+      <a href="#" title="Carrinho">🛒</a>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO DO CARRINHO -->
+  <main class="products-section">
+    <h2>🛒 Seu Carrinho</h2>
+
+    <div id="itens-carrinho" class="products-grid">
+      <!-- Os produtos aparecerão aqui -->
+    </div>
+
+    <h3 id="total" style="margin-top: 20px;"></h3>
+
+    <button class="btn-finalizar" onclick="finalizarCompra()" 
+      style="margin-top:20px; padding:12px 20px; background:#4EE2C0; border:none; border-radius:10px; cursor:pointer; font-size:16px; color:white;">
+      Finalizar Compra
+    </button>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Farmácia Águas Claras</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

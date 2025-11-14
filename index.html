@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Águas Claras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo-area">
+        <img src="./imgs/logo.jpeg" alt="Logo">
+        <span>Farmácia Águas Claras</span>
+    </div>
+
+    <div class="search-area">
+        <input type="text" placeholder="O que você procura?">
+        <button>🔍</button>
+    </div>
+
+    <a href="carrinho.html" class="cart-button">
+    <div class="cart-icon-wrapper">
+        <img src="./imgs/carrinho.png" alt="Carrinho" class="cart-icon">
+        <span class="cart-count">0</span>
+    </div>
+
+    <div class="cart-info">
+        <span class="cart-label">Carrinho</span>
+        <span class="cart-total">R$ 0,00</span>
+    </div>
+</a>
+</header>
+
+<section class="categories-scroll">
+    <div class="cat-item"><img src="./imgs/cat1.png"><span>Beleza</span></div>
+    <div class="cat-item"><img src="./imgs/cat2.png"><span>Vitaminas</span></div>
+    <div class="cat-item"><img src="./imgs/cat3.png"><span>Higiene</span></div>
+    <div class="cat-item"><img src="./imgs/cat4.png"><span>Dermocosméticos</span></div>
+    <div class="cat-item"><img src="./imgs/cat5.png"><span>Infantil</span></div>
+    <div class="cat-item"><img src="./imgs/cat6.png"><span>Promoções</span></div>
+</section>
+
+<section class="hero-banner">
+    <img src="./imgs/banner-farmacia.png" alt="Banner principal">
+    <div class="banner-text">
+        <h1>Ofertas Imperdíveis</h1>
+        <p>Descontos especiais em toda a linha de cuidados!</p>
+        <a href="#" class="btn">Comprar agora</a>
+    </div>
+</section>
+
+<!-- TODAS AS SESSÕES CORRIGIDAS -->
+
+<section class="products-section">
+    <h2>Promoções do dia</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/P1ShampooAntiqueda.webp">
+            <h3>Shampoo Antiqueda</h3>
+            <p class="price">R$ 24.90</p>
+            <button onclick="adicionarAoCarrinho('Shampoo Antiqueda', 24.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/prod2.png">
+            <h3>Vitamina C</h3>
+            <p class="price">R$ 32.90</p>
+            <button onclick="adicionarAoCarrinho('Vitamina C', 32.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/prod3.png">
+            <h3>Protetor Solar FPS60</h3>
+            <p class="price">R$ 58.90</p>
+            <button onclick="adicionarAoCarrinho('Protetor Solar FPS60', 58.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/prod4.png">
+            <h3>Hidratante Corporal</h3>
+            <p class="price">R$ 19.90</p>
+            <button onclick="adicionarAoCarrinho('Hidratante Corporal', 19.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<!-- REMÉDIOS -->
+<section class="products-section">
+    <h2>Remédios</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/rem1.png">
+            <h3>Dorflex 36 cáps</h3>
+            <p class="price">R$ 12.90</p>
+            <button onclick="adicionarAoCarrinho('Dorflex 36 cáps', 12.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/rem2.png">
+            <h3>Dipirona 500mg</h3>
+            <p class="price">R$ 8.90</p>
+            <button onclick="adicionarAoCarrinho('Dipirona 500mg', 8.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/rem3.png">
+            <h3>Ibuprofeno 400mg</h3>
+            <p class="price">R$ 14.90</p>
+            <button onclick="adicionarAoCarrinho('Ibuprofeno 400mg', 14.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/rem4.png">
+            <h3>Neosaldina</h3>
+            <p class="price">R$ 18.90</p>
+            <button onclick="adicionarAoCarrinho('Neosaldina', 18.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<!-- CUIDADOS MASCULINOS -->
+<section class="products-section">
+    <h2>Cuidados Masculinos</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/masc1.png">
+            <h3>Desodorante Nivea Men</h3>
+            <p class="price">R$ 15.90</p>
+            <button onclick="adicionarAoCarrinho('Desodorante Nivea Men', 15.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/masc2.png">
+            <h3>Espuma de Barbear</h3>
+            <p class="price">R$ 19.90</p>
+            <button onclick="adicionarAoCarrinho('Espuma de Barbear', 19.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/masc3.png">
+            <h3>Balm pós-barba</h3>
+            <p class="price">R$ 22.90</p>
+            <button onclick="adicionarAoCarrinho('Balm pós-barba', 22.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/masc4.png">
+            <h3>Loção capilar</h3>
+            <p class="price">R$ 29.90</p>
+            <button onclick="adicionarAoCarrinho('Loção capilar', 29.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<!-- BELEZA -->
+<section class="products-section">
+    <h2>Beleza e Cuidados</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/bel1.png">
+            <h3>Protetor Solar Facial</h3>
+            <p class="price">R$ 54.90</p>
+            <button onclick="adicionarAoCarrinho('Protetor Solar Facial', 54.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bel2.png">
+            <h3>Base Matte</h3>
+            <p class="price">R$ 39.90</p>
+            <button onclick="adicionarAoCarrinho('Base Matte', 39.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bel3.png">
+            <h3>Creme Antissinais</h3>
+            <p class="price">R$ 69.90</p>
+            <button onclick="adicionarAoCarrinho('Creme Antissinais', 69.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bel4.png">
+            <h3>Água Micelar</h3>
+            <p class="price">R$ 21.90</p>
+            <button onclick="adicionarAoCarrinho('Água Micelar', 21.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<!-- BEBÊ -->
+<section class="products-section">
+    <h2>Cuidados com o Bebê</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/bebe1.png">
+            <h3>Fralda Pampers</h3>
+            <p class="price">R$ 48.90</p>
+            <button onclick="adicionarAoCarrinho('Fralda Pampers', 48.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bebe2.png">
+            <h3>Lenço Umedecido</h3>
+            <p class="price">R$ 9.90</p>
+            <button onclick="adicionarAoCarrinho('Lenço Umedecido', 9.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bebe3.png">
+            <h3>Shampoo Baby</h3>
+            <p class="price">R$ 15.90</p>
+            <button onclick="adicionarAoCarrinho('Shampoo Baby', 15.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/bebe4.png">
+            <h3>Cotonetes Infantil</h3>
+            <p class="price">R$ 5.90</p>
+            <button onclick="adicionarAoCarrinho('Cotonetes Infantil', 5.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<!-- VITAMINAS -->
+<section class="products-section">
+    <h2>Vitaminas e Suplementos</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="./imgs/vit1.png">
+            <h3>Vitamina D3</h3>
+            <p class="price">R$ 24.90</p>
+            <button onclick="adicionarAoCarrinho('Vitamina D3', 24.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/vit2.png">
+            <h3>Ômega 3</h3>
+            <p class="price">R$ 34.90</p>
+            <button onclick="adicionarAoCarrinho('Ômega 3', 34.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/vit3.png">
+            <h3>Vitamina C 1g</h3>
+            <p class="price">R$ 18.90</p>
+            <button onclick="adicionarAoCarrinho('Vitamina C 1g', 18.90)">Adicionar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./imgs/vit4.png">
+            <h3>Complexo B</h3>
+            <p class="price">R$ 22.90</p>
+            <button onclick="adicionarAoCarrinho('Complexo B', 22.90)">Adicionar</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Farmácia Águas Claras — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
